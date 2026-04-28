@@ -1,0 +1,17 @@
+# Generated UI — contains the embedded ANTHROPIC_API_KEY when built locally.
+# Rebuild with `python3 build.py` after cloning.
+index.html
+
+# Concatenated bundle is a derived artifact; safe but easy to regenerate.
+robotics-landscape-full.md
+
+# Env / secrets
+.env
+.env.*
+*.local
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
