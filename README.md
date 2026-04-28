@@ -1,6 +1,6 @@
 # Robotics Landscape
 
-Research bundle compiled April 2026. 82 company dossiers across 12 verticals, gap analysis, data-collection deep-dive, ecosystem chatter, and five validation research files. Aimed at a software-first solo founder evaluating wedges in robotics.
+Research bundle compiled April 2026. 82 company dossiers across 12 verticals, gap analysis, data-collection deep-dive, ecosystem chatter, and five validation research files. Aimed at software-first founders evaluating wedges in robotics.
 
 ## Quick start
 
@@ -48,7 +48,7 @@ The pre-commit hook blocks any commit containing a real Anthropic or OpenAI API 
 
 1. **RaaS billing infrastructure** — zero funded competitors, $8.2B market 2026, validated by labour-market signal (Serve Robotics improvising it via one role).
 2. **"Vanta for robots"** — EU AI Act + Machinery Regulation Aug 2027 deadline, BSI as named UK channel partner.
-3. **Robot fleet underwriting** — Lloyd's MGA shape, Koop Technologies is direct US prior art (UK-challenger framing still credible).
+3. **Robot fleet underwriting** — Lloyd's MGA shape, Koop Technologies is direct US prior art (UK-challenger framing remains credible).
 4. **Multi-vendor fleet observability (mid-market only)** — green-field for the operator-side mixed-fleet wedge that Foxglove ignores.
 5. **Robotics policy evaluation SaaS** — independent benchmarks for VLA models, sim-only.
 

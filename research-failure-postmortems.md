@@ -1,6 +1,6 @@
 # Robotics Company Failure Post-Mortems
 **Written:** 2026-04-28
-**Scope:** 6 cases + cross-cutting synthesis for a software-first solo founder
+**Scope:** 6 cases + cross-cutting synthesis for software-first teams
 **Sources:** SEC filings, TechCrunch, MDDIOnline, Bloomberg, CNBC
 
 ---
@@ -18,7 +18,7 @@ Not a technology failure. The underlying order backlog hit $265M and kept growin
 2. **Enterprise-only GTM.** Every contract required multi-quarter procurement, custom integration, and an internal robotics team at the customer. No mid-market wedge, no product-led growth, no replicable unit.
 3. **Treating backlog as a public-market story.** Backlog at $265M with $65M revenue means the market was right to discount it — none of that backlog was bankable.
 
-### Lesson for a software-first solo founder
+### Lesson for a software-first team
 If your revenue is gated by a physical installation or hardware delivery cycle, you cannot be in a public-market valuation mode. Software wedges that attach to already-installed hardware (observability, billing, compliance) decouple revenue from hardware timelines. The SPAC window for robotics is closed. Build for private cashflow discipline.
 
 ---
@@ -36,7 +36,7 @@ Surgical robotics has a mandatory multi-year regulatory gauntlet. Vicarious init
 2. **Switching regulatory pathway mid-flight.** De novo is the right call technically but resetting the clock with public shareholders is near-impossible to survive.
 3. **No revenue bridge.** Intuitive built training revenue, service contracts, and instrument consumables before its robot was dominant. Vicarious had nothing: no services, no data licensing, no interim revenue.
 
-### Lesson for a software-first solo founder
+### Lesson for a software-first team
 Any market that requires regulatory clearance before first dollar of revenue is a near-death gauntlet for a startup. The gap analysis's own note — "Distalmotion took 13 years and $400M to reach 3,000 procedures" — is not a competitive moat; it is a warning about the category's capital physics. Software wedges in this space (compliance tooling, evaluation SaaS, observability) all generate revenue before any regulatory event.
 
 ---
@@ -54,7 +54,7 @@ Canvas's RaaS model required Canvas to own or finance the hardware, deploy it, m
 2. **Starting as a subcontractor.** This positioned Canvas as competition to its eventual customers (drywall contractors) rather than a vendor. The pivot to lease model happened late.
 3. **Single-product, single-vertical concentration.** No adjacency to fall back on if construction volume dropped. It dropped.
 
-### Lesson for a software-first solo founder
+### Lesson for a software-first team
 RaaS is a fintech product wearing a hardware costume. A startup that ships RaaS without solving the financing layer first is handing hardware to customers on an unsecured vendor-financed basis. The RaaS billing wedge (Wedge 4 in the gap analysis) and the financing/leasing platform wedge (Wedge K) exist precisely because Canvas showed the cost of skipping that infrastructure. The lesson is that the software layer enabling RaaS economics — metering, billing, residual-value underwriting — is worth building before or instead of being the RaaS operator.
 
 ---
@@ -72,7 +72,7 @@ Nuro announced plans for a $40M custom test track and a 125,000 sq ft factory to
 2. **Competing on delivery economics rather than autonomy tech.** Nuro's moat was always the L4 software stack, not the ability to deliver burritos 10% cheaper than DoorDash. The pivot validated this too late.
 3. **Announcing factory-scale capex before unit economics were proven.** The $40M track and factory announcement signalled commitment to the operator model at exactly the moment the numbers were telling them to exit it.
 
-### Lesson for a software-first solo founder
+### Lesson for a software-first team
 The operator model in physical robotics is a capital trap. Every startup that positions itself as "the operator" (Nuro, Coco, Serve, Canvas) eventually either licenses the tech, sells to a strategic, or dies. Software wedges that sit above the operator layer — the billing platform, the observability stack, the insurance layer — capture value without needing to own the fleet.
 
 ---
@@ -90,7 +90,7 @@ iRobot's Roomba premium eroded as Chinese manufacturers shipped equivalent hardw
 2. **Allowing the supply chain to be controlled by a Chinese manufacturer (Picea) that became the largest lender.** When you let your contract manufacturer extend you credit, they own the company by the time the balance sheet cracks.
 3. **Treating the Amazon acquisition as a product roadmap.** iRobot deferred innovation against the assumption the deal would close. It didn't, and they had two years of lost ground to make up with a shrinking cash balance.
 
-### Lesson for a software-first solo founder
+### Lesson for a software-first team
 Hardware categories commoditise. Even a category inventor with 20 years of head start can be zeroed out by manufacturing economics. Software attached to a hardware category — fleet management, data monetisation, compliance — retains margin even as hardware ASPs collapse. Any software wedge built on top of these robots (observability, privacy/sovereignty layer, insurance) benefits from the installed-base iRobot created, while being immune to the commoditisation that killed iRobot.
 
 ---
@@ -108,7 +108,7 @@ The unit economics of on-demand single-item cover are structurally broken for a 
 2. **Launching in three geographies simultaneously.** UK, AU, and US have different regulatory frameworks, carrier relationships, and consumer insurance literacy. Multi-market consumer launch before product-market fit is resource destruction.
 3. **Not embedding into an existing purchase flow from day one.** Waymo, Free2Move, and car-sharing partnerships (which Trov eventually pursued) were the right channel — they embed the insurance into a moment of purchase. Consumer app was always second-best.
 
-### Lesson for a software-first solo founder (Wedge 1 — robot fleet underwriting)
+### Lesson for Wedge 1 — robot fleet underwriting
 The robot fleet insurance wedge must not be B2C. Trov's failure is a precise template for what happens when you try to acquire insurance customers directly in a trust-deficit category. The correct model is embedded: sell the underwriting platform to an existing broker (Marsh, Aon, Lockton) or embed it into a RaaS contract as a vendor-side bundle. The MGA-first path the gap analysis recommends only works if distribution is through trusted intermediaries, not direct-to-fleet-operator cold outbound.
 
 ---
@@ -126,7 +126,7 @@ Argo's technology was genuinely impressive — L4 in geofenced cities. The failu
 2. **Optimising for L4 at the expense of near-term L2/L3 monetisation.** Mobileye, which did the opposite, went public at $17B in 2022 — the same year Argo shut down.
 3. **No software licensing model alongside hardware deployment.** If Argo's software had been licensable to other OEMs or integrators, the company could have survived Ford and VW's exit.
 
-### Lesson for a software-first solo founder
+### Lesson for a software-first team
 Software companies must have multiple customers. A "two-sponsor" dependency is a liquidation waiting for a sponsor re-prioritisation event. Any robotics software product that relies on a single OEM's continued enthusiasm — proprietary observability built only for one hardware vendor, eval SaaS gated to one OEM's models — replicates Argo's structural fragility. Multi-vendor from day one is a survival requirement, not an aspiration.
 
 ---
@@ -138,20 +138,20 @@ Seven cases. Four recurring patterns that kill robotics startups. Each pattern m
 ### Pattern 1: Hardware physics defeat software-company economics
 Berkshire Grey, Canvas, and Nuro all collapsed under the weight of hardware deployment timelines. Revenue recognition required a physical installation. Capital burned while backlog accumulated. This is the foundational argument for software-only wedges: they decouple revenue from hardware timelines entirely. A compliance SaaS (Wedge 2) signs a contract and starts billing within days of closing. A fleet observability product (Wedge 3) bills on API calls. Neither waits 18 months for a warehouse to be retrofitted.
 
-**Wedge most at risk:** Wedge K (financing/leasing platform). If the founder becomes the lender — originates loans against hardware — they are Canvas. The safe version is origination-and-servicing software that passes paper to a third-party balance sheet, not a startup that owns the receivables.
+**Wedge most at risk:** Wedge K (financing/leasing platform). If the team becomes the lender — originating loans against hardware — they are Canvas. The safe version is origination-and-servicing software that passes paper to a third-party balance sheet, not a startup that owns the receivables.
 
 ### Pattern 2: RaaS without financial infrastructure is vendor-financing without a bank
 Canvas is the clearest case but the pattern recurs in Nuro (fleet operator without fleet economics) and iRobot (supply chain financed by the contract manufacturer). Running RaaS means owning hardware on a startup balance sheet while revenue accretes over months. Without residual-value underwriting, third-party lending rails, or securitisation, the startup is an undercapitalised hardware leasing company.
 
-**Wedge most at risk:** Wedge O (RaaS billing). This wedge is safe as long as it is purely metering, reconciliation, and revenue-recognition software — the product generates no receivables. The risk emerges if the founder is tempted to add embedded lending (a natural extension) before the balance-sheet infrastructure is in place. Build the meter first. Leave the loan book for Series B.
+**Wedge most at risk:** Wedge O (RaaS billing). This wedge is safe as long as it is purely metering, reconciliation, and revenue-recognition software — the product generates no receivables. The risk emerges if the team is tempted to add embedded lending (a natural extension) before the balance-sheet infrastructure is in place. Build the meter first. Leave the loan book for Series B.
 
 ### Pattern 3: Regulatory and timeline dependency without a revenue bridge
 Vicarious Surgical is the cleanest case. Nine years, $220M, zero revenue, because the product cannot be sold until regulatory clearance. iRobot's failure is a milder version: 20 years of hardware revenue with no software revenue bridge, so when hardware commoditised there was nothing to fall back on.
 
-**Wedge most at risk:** Wedge 2 (Vanta for robots — EU AI Act compliance). The risk here is not that the founder cannot get revenue. It is the inverse: customers only need the compliance workflow once the regulation is in force, and EU AI Act enforcement is on a 2025–2027 phased timeline. If the Machinery Regulation slips (Brussels has form), the TAM opens later. Mitigant: the gap analysis already identifies notified-body partnerships as the distribution channel — they pull the product into deals regardless of enforcement timing, because OEMs need to prepare before the deadline.
+**Wedge most at risk:** Wedge 2 (Vanta for robots — EU AI Act compliance). The risk here is not that the team cannot get revenue. It is the inverse: customers only need the compliance workflow once the regulation is in force, and EU AI Act enforcement is on a 2025–2027 phased timeline. If the Machinery Regulation slips (Brussels has form), the TAM opens later. Mitigant: the gap analysis already identifies notified-body partnerships as the distribution channel — they pull the product into deals regardless of enforcement timing, because OEMs need to prepare before the deadline.
 
 ### Pattern 4: Capital structure mismatch — public (or SPAC) timelines on hardware-physics companies
-Berkshire Grey, Vicarious Surgical, and iRobot all faced public-market pressure on timelines that hardware physics cannot compress. SPAC structures forced quarterly progress narratives on businesses whose deployment cycles run in years. This is not a problem for a software-first solo founder building in 2026 — the SPAC window for robotics is closed and none of the top-5 wedges are public-market candidates in year one. The lesson is more subtle: any investor narrative that prices in "we will be profitable in Q6" on a hardware-deployment-gated revenue model will destroy the company when Q6 arrives with a shorter backlog.
+Berkshire Grey, Vicarious Surgical, and iRobot all faced public-market pressure on timelines that hardware physics cannot compress. SPAC structures forced quarterly progress narratives on businesses whose deployment cycles run in years. This is not a problem for a software-first team building in 2026 — the SPAC window for robotics is closed and none of the top-5 wedges are public-market candidates in year one. The lesson is more subtle: any investor narrative that prices in "we will be profitable in Q6" on a hardware-deployment-gated revenue model will destroy the company when Q6 arrives with a shorter backlog.
 
 **Wedge most at risk:** Wedge 1 (robot fleet underwriting). Insurance MGA economics require reinsurer backing within 18 months or the economics collapse — as the gap analysis itself notes. If reinsurer commitment slips, the timeline pressure on the MGA mimics the SPAC trap: obligations to current coverage commitments with no capacity to underwrite new ones. The pure data/risk-scoring SaaS path (sell scoring to existing insurers before standing up the MGA) explicitly hedges this risk and should be the first 12 months of the product regardless.
 
@@ -167,7 +167,7 @@ Berkshire Grey, Vicarious Surgical, and iRobot all faced public-market pressure 
 | Two-sponsor concentration | Argo AI | Wedge 5 (eval SaaS) | Multi-OEM from day one; open leaderboard as forcing function |
 | Single-product hardware commoditisation | iRobot | All hardware-adjacent | Attach to installed base; never own the hardware |
 
-The thread across the keep list from the gap analysis is the mirror image of these failure modes: software that attaches to already-installed hardware, sold through trusted intermediaries (SIs, brokers, notified bodies), with multi-vendor contracts from day one, and revenue that accretes from first week of deployment rather than after 18 months of integration. Every top-5 wedge passes that test. The traps above are the specific ways each one could fail if the founder drifts toward the hardware-operator model they are designed to avoid.
+The thread across the keep list from the gap analysis is the mirror image of these failure modes: software that attaches to already-installed hardware, sold through trusted intermediaries (SIs, brokers, notified bodies), with multi-vendor contracts from day one, and revenue that accretes from first week of deployment rather than after 18 months of integration. Every top-5 wedge passes that test. The traps above are the specific ways each one could fail if the team drifts toward the hardware-operator model they are designed to avoid.
 
 ---
 

@@ -4,9 +4,9 @@
 
 ---
 
-I'll treat "opportunities" as business, product, market-entry, or investment angles, using the robotics landscape as context and checking fresh market signals before ranking them.
+This treats "opportunities" as business, product, market-entry, or investment angles, using the robotics landscape as context and checking fresh market signals before ranking them.
 
-I'd focus on robotics infrastructure, not robot hardware. Your uploaded landscape points to the same conclusion: the winners for a software-first founder are likely to be the layers around fleets, compliance, billing, insurance, observability, and embodied-AI deployment.
+The focus is robotics infrastructure, not robot hardware. The bundled landscape points to the same conclusion: the winners for a software-first team are likely to be the layers around fleets, compliance, billing, insurance, observability, and embodied-AI deployment.
 
 The market backdrop is strong enough to justify looking now. IFR reports **542,000 industrial robot installations in 2024** and **4.664 million industrial robots in operation**, while **professional service robots reached almost 200,000 units sold in 2024**, with **RaaS fleets up 31%**. The fastest practical deployment categories are transportation/logistics, cleaning, medical/lab, and mixed service fleets.
 
@@ -26,7 +26,7 @@ The market backdrop is strong enough to justify looking now. IFR reports **542,0
 
 **Start with robot fleet observability for UK/EU mid-market operators, then expand into billing, compliance, and insurance.**
 
-That path gives you the data asset first. Once you ingest telemetry and incidents, you can sell three higher-value modules: compliance evidence, usage-based billing, and risk scoring. It is also easier to validate than insurance or compliance alone because operators already feel the daily pain of "three robots, three dashboards, no single truth."
+That path builds the data asset first. Once telemetry and incidents are ingested, three higher-value modules can be layered on: compliance evidence, usage-based billing, and risk scoring. It is also easier to validate than insurance or compliance alone because operators already feel the daily pain of "three robots, three dashboards, no single truth."
 
 A good wedge would be:
 
@@ -43,7 +43,7 @@ Initial verticals to test:
 - **Week 1:** Interview 15 operators with at least one deployed robot. Ask how they track uptime, vendor SLAs, incidents, failed tasks, safety documentation, and usage invoices.
 - **Week 2:** Interview 10 robotics OEMs/integrators. Ask what telemetry they expose, what customers request, and whether they would allow operator-side integrations.
 - **Week 3:** Build a clickable dashboard using fake or sample telemetry: uptime, error logs, task completion, vendor comparison, SLA report, and compliance evidence export.
-- **Week 4:** Try to secure 2–3 design partners. The test is not "do they like robotics?" It is whether they will give you logs, introduce their integrator, and agree to pay for a pilot.
+- **Week 4:** Try to secure 2–3 design partners. The test is not "do they like robotics?" It is whether they will hand over logs, introduce their integrator, and agree to pay for a pilot.
 
 ## What to avoid
 

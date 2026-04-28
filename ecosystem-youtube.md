@@ -1,6 +1,6 @@
 # Robotics Ecosystem — Video Sources
 
-*Scouted: 2026-04-28. Scope: YouTube channels, podcasts on YT, conference talks. 8-10 sources, 2025-2026 bias. Audience: software-first founder.*
+*Scouted: 2026-04-28. Scope: YouTube channels, podcasts on YT, conference talks. 8-10 sources, 2025-2026 bias. Audience: software-first founders.*
 
 ---
 
@@ -104,7 +104,7 @@
 
 ---
 
-## Synthesis: 5 Themes for a Software-First Solo Founder
+## Synthesis: 5 Themes for Software-First Founders
 
 **1. Data is the moat, not the model.**
 This is the most-repeated claim across Finn (AI Startup School), Hausman (Sequoia), and a16z (Physical AI episode). Every credible voice in 2025-2026 agrees: whoever aggregates diverse, real-world robot trajectory data at scale sets the model quality ceiling. The commercial implication for a software founder is direct — a data collection, curation, or marketplace product has genuine defensibility that another fine-tuning wrapper does not.
@@ -119,4 +119,4 @@ CoRL 2025 and the NVIDIA GTC sessions both surfaced the same gap: policy evaluat
 NVIDIA shipping GR00T N1 as an open foundation model is the signal. Within 18 months, every hardware OEM will have access to a capable base model for free or near-free. This means a software founder should not be building a foundation model — the value is in the layers above (fleet management, task specification, policy monitoring) and below (data pipelines, sim-to-real tooling). The window to compete at the model layer is closing fast.
 
 **5. The GTM path runs through one vertical, not horizontally.**
-Hausman's pi.ai went deep on dexterous manipulation before generalizing. Adcock went deep on automotive manufacturing. No credible voice in these sources advocates horizontal robotics software from day one. For a solo founder, the implication is clear: pick one vertical (logistics, food service, warehousing), prove the software wedge there, then expand. The investor narrative (BG2, a16z) supports this — "factory-first principles" over platform abstraction.
+Hausman's pi.ai went deep on dexterous manipulation before generalizing. Adcock went deep on automotive manufacturing. No credible voice in these sources advocates horizontal robotics software from day one. The implication for small teams is clear: pick one vertical (logistics, food service, warehousing), prove the software wedge there, then expand. The investor narrative (BG2, a16z) supports this — "factory-first principles" over platform abstraction.

@@ -1,7 +1,7 @@
 # Robotics Data Collection — Deep Dive (April 2026)
 
-**Audience:** Software-first solo founder, UK-based, fintech-adjacent network.
-**Scope:** Is "data collection / labelling for VLA training" (Wedge A in the gap analysis) a real opportunity for this founder? Where's the actual gap? What wedge would I pick?
+**Audience:** Software-first founders evaluating robotics opportunities.
+**Scope:** Is "data collection / labelling for VLA training" (Wedge A in the gap analysis) a real opportunity for a software-first team? Where's the actual gap? Which wedge holds up?
 **Sources:** 18 web searches/fetches, April 2026. Footnoted at end.
 
 ---
@@ -10,7 +10,7 @@
 
 Robotics data is the loudest infrastructure story of 2026. Scale AI is doing $2B revenue and just shipped UR AI Trainer. Apptronik is building a literal "Robot Park" data factory in Austin. China has 40+ government-funded teleop centres pumping out millions of trajectories. Sensei (YC S24), PrismaX ($11M, a16z), Cortex AI (YC), NomadicML ($8.4M Mar 2026), Adamo and Cogito are all funded. RealMan's RealSource was open-sourced in Dec 2025. Pricing has collapsed: high-quality teleop data has fallen from ~$340/hr in 2024 to ~$118/hr by March 2026.
 
-The naive wedge — "be Scale AI for non-UR cobots" — is already crowded and commoditising fast. The non-obvious wedges are (a) **post-collection data engineering** (search, dedup, edge-case mining, evaluation harnesses on top of customer-collected data — what NomadicML is doing for AVs but for cobots/humanoids), and (b) **EU-sovereign data ops** for buyers who legally cannot use Scale or Chinese centres (defence, pharma, surgical, government). The first is software-only and a solo founder can ship V1 in 90 days. The second is operationally heavy but has near-zero competition.
+The naive wedge — "be Scale AI for non-UR cobots" — is already crowded and commoditising fast. The non-obvious wedges are (a) **post-collection data engineering** (search, dedup, edge-case mining, evaluation harnesses on top of customer-collected data — what NomadicML is doing for AVs but for cobots/humanoids), and (b) **EU-sovereign data ops** for buyers who legally cannot use Scale or Chinese centres (defence, pharma, surgical, government). The first is software-only and a small team can ship V1 in 90 days. The second is operationally heavy but has near-zero competition.
 
 **Verdict: wait-and-watch on labour-arbitrage teleop farms. Build-now on a software layer that sits on top of the collected data — specifically a curation/eval layer or an EU-sovereign ops layer.**
 
@@ -28,7 +28,7 @@ The naive wedge — "be Scale AI for non-UR cobots" — is already crowded and c
 - **Ant Group LingBot-VLA:** ~20,000 hours of teleop bimanual data across 9 dual-arm embodiments. Internal data factory in China.
 - **X Square Robot ($140M, Jan 2026, Shenzhen):** In-house data + WALL-A foundation model.
 
-**Translation:** Frontier labs do NOT bulk-buy raw teleop data from third parties at scale. They either generate it in-house ("data factory" model), tap open datasets (OXE, DROID, RealSource), or pay for thin slices through Scale/Surge for QA + annotation. Scale's own Physical AI platform numbers (100,000+ production hours with PI, Generalist AI, Cobot) tell the actual story: the buy is QA-ed annotation services, not raw demonstrations. [^11]
+**Translation:** Frontier labs do NOT bulk-buy raw teleop data from third parties at scale. They either generate it in-house ("data factory" model), tap open datasets (OXE, DROID, RealSource), or pay for thin slices through Scale/Surge for QA + annotation. Scale's own Physical AI platform numbers (100,000+ production hours with PI, Generalist AI, Cobot) tell the actual story: the buy is QA'd annotation services, not raw demonstrations. [^11]
 
 ### Humanoid OEMs (mixed)
 
@@ -173,7 +173,7 @@ The supply side is not undersupplied at the **generalist-labelling** end. It IS 
 
 **Pricing:** SaaS at $5–$25k/month per fleet for retention/search/eval; usage on egress for trainable exports.
 **90-day MVP:** S3/HF Datasets ingestion adapter + LeRobot-format normaliser + CLIP/SigLIP-indexed semantic search ("find all grasps of transparent containers under low light") + jupyter export. Single-tenant deploy, EU-only region.
-**Why this founder wins:** Pure software. You can ship on AWS+HuggingFace+Modal in weeks. UK base = EU residency story. Fintech network helps because the buyer in big-pharma / surgical is procurement-led and that's a familiar muscle.
+**Why a small software-first team can win:** Pure software, shippable on AWS+HuggingFace+Modal in weeks. UK/EU domicile is an asset for the EU residency story. Buyers in big-pharma / surgical are procurement-led, which favours teams comfortable with structured procurement cycles.
 **What kills it:** NomadicML extends from AV into robotics within 12 months (likely; they will). Mitigant: pick a vertical NomadicML won't enter (surgical, pharma, defence) and own a workflow on top of search, not just search.
 
 ### Wedge 2 — "EU-sovereign data ops" for regulated buyers
@@ -189,8 +189,8 @@ The supply side is not undersupplied at the **generalist-labelling** end. It IS 
 
 **Pricing:** Enterprise contracts £150–500k/year per programme; per-trajectory bills for bursty demand; £40–80k/month managed-service retainers.
 **90-day MVP:** SOC 2 + ISO 27001 readiness package, AWS Frankfurt single-region deploy, 5–10 vetted UK-based teleoperators on retainer through one of the existing UK operator pools (Extend Robotics partner?), one closed-loop pilot with CMR Surgical.
-**Why this founder wins:** UK is the perfect base for "neutral, GDPR-clean, NATO-friendly." Lloyd's / Marsh / Aon / BSI relationships from his fintech network unlock surgical-malpractice and defence procurement chains that a Palo Alto founder cannot reach. Solo software founder can't run hardware ops, but CAN run a project-services business with 5 contracted operators behind a SaaS.
-**What kills it:** Buying cycle is 9–18 months. You die of starvation before the first big contract. Mitigant: stack 3–4 small (£30–80k) pilot contracts in the first year for cashflow; raise a small bridge.
+**Why a UK/EU-based team can win:** UK domicile is a credible "neutral, GDPR-clean, NATO-friendly" position. Fintech-adjacent networks (Lloyd's / Marsh / Aon / BSI relationships) help unlock surgical-malpractice and defence procurement chains that a Palo Alto-based competitor cannot reach. A small software team can't run hardware ops, but can run a project-services business with 5 contracted operators behind a SaaS.
+**What kills it:** Buying cycle is 9–18 months. Cash starvation before the first big contract is the main risk. Mitigant: stack 3–4 small (£30–80k) pilot contracts in the first year for cashflow; raise a small bridge.
 
 ### Wedge 3 — "Eval-as-a-service" for VLA models on customer policies
 
@@ -205,18 +205,18 @@ The supply side is not undersupplied at the **generalist-labelling** end. It IS 
 
 **Pricing:** $5–25k/eval run (insurers/buyers); enterprise leaderboard tier $50–250k/year (OEMs); free public leaderboard for inbound.
 **90-day MVP:** LeRobot + MuJoCo + Isaac Lab harness, 20-task benchmark suite, public Chatbot-Arena-style leaderboard with π0, OpenVLA, RT-X, GR00T-N1. Open-source the harness; sell evaluation runs.
-**Why this founder wins:** Software-only, no hardware. UK = neutral arbiter angle. Direct adjacency to Wedge H (insurance) in the gap-analysis — same buyer, same telemetry stack.
+**Why a small software-first team can win:** Software-only, no hardware. UK/EU domicile supports a "neutral arbiter" angle. Direct adjacency to Wedge H (insurance) in the gap-analysis — same buyer, same telemetry stack.
 **What kills it:** MLPerf, NVIDIA, or Scale launch a competing benchmark with a brand the market trusts more. Mitigant: ship first, optimise for transparency, partner with Imperial / ETH / Berkeley to lend academic credibility before NVIDIA gets organised.
 
 ---
 
 ## 5. Verdict
 
-**Wait-and-watch on the obvious "Scale AI for non-UR cobots" play.** It's getting commoditised in real time. Sensei, Cortex, PrismaX, Adamo and a dozen Asian players will burn through the labour-arbitrage margin in 18 months. The Scale-UR partnership is squeezing from the top; Chinese state-subsidised data factories squeeze from the bottom. Founder profile is also wrong: solo software-first, no hardware ops, not a labour-arbitrage operator.
+**Wait-and-watch on the obvious "Scale AI for non-UR cobots" play.** It's getting commoditised in real time. Sensei, Cortex, PrismaX, Adamo and a dozen Asian players will burn through the labour-arbitrage margin in 18 months. The Scale-UR partnership is squeezing from the top; Chinese state-subsidised data factories squeeze from the bottom. The shape of this business is wrong for software-first teams: it's labour-arbitrage operations, not a software margin.
 
-**Build-now on the curation/eval/sovereignty layer.** The actual scarcity in 2026 is not raw demonstrations; it's the **software that turns the now-cheap raw data into trainable, auditable, sovereign datasets**. NomadicML's $8.4M seed at a $50M post for AV-only is the strongest market signal — well-respected investors paid up for the pure-software angle on this exact gap, before robotics was even fully addressed. A UK founder can credibly own the EU/sovereignty edge that NomadicML (US, AV-first) won't reach.
+**Build-now on the curation/eval/sovereignty layer.** The actual scarcity in 2026 is not raw demonstrations; it's the **software that turns the now-cheap raw data into trainable, auditable, sovereign datasets**. NomadicML's $8.4M seed at a $50M post for AV-only is the strongest market signal — well-respected investors paid up for the pure-software angle on this exact gap, before robotics was even fully addressed. UK/EU-domiciled teams can credibly own the EU/sovereignty edge that NomadicML (US, AV-first) won't reach.
 
-**Pick one wedge: Curation OS (Wedge 1).** It's pure software, ships in 90 days, has proven willingness-to-pay (NomadicML's traction), and is the cleanest match for a solo software-first UK founder. Stack Wedge 2 (sovereignty) on top within 12 months as the GTM differentiator and channel into regulated buyers — that is where the UK edge converts to revenue. Wedge 3 (eval) is the long-term option play but is harder to monetise in year one.
+**Pick one wedge: Curation OS (Wedge 1).** It's pure software, ships in 90 days, has proven willingness-to-pay (NomadicML's traction), and is the cleanest match for a small software-first team. Stack Wedge 2 (sovereignty) on top within 12 months as the GTM differentiator and channel into regulated buyers — that is where UK/EU domicile converts to revenue. Wedge 3 (eval) is the long-term option play but is harder to monetise in year one.
 
 The data-collection space is hot. The data-collection BUSINESS is not — it's a service business with collapsing margins, hardware ops, and competition from sovereign-state actors. The data-INFRASTRUCTURE business one layer up is where the durable software margin is hiding. Build there.
 

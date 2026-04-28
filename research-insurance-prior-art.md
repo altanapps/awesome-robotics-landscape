@@ -36,7 +36,7 @@ Hippo used smart home sensor integrations (leak detectors, smoke, etc.) to claim
 Lemonade's stated advantage is AI-driven claims and underwriting. Reality is more nuanced: gross loss ratio was ~79% through 2024, improving to ~67% by mid-2025 as they repriced and exited bad cohorts. In-force premium crossed $1B in 2025. Revenue reached $526M in 2024, projected $738M in 2025. They are still loss-making (targeting positive EBITDA Q4 2026). The real lesson for a robotics wedge: AI underwriting is table stakes by 2026; the durable edge is proprietary closed-loop data from the insured asset class that incumbent carriers cannot replicate. https://www.reinsurancene.ws/lemonades-gross-profit-surges-90-as-net-loss-narrows-for-2024/
 
 **Root / Tesla (auto telematics)**
-Root underwrites entirely on observed driving behaviour rather than demographic proxies. Loss ratios stabilised once the adverse-selection problem was solved (good drivers opt in, bad drivers opt out or are priced out). Tesla Insurance in-house captures real-time vehicle telemetry for real-time premium adjustments. The robotics analogy is direct: if you can capture continuous sensor data from a robot fleet — operating hours, environment classification, near-miss events — you can underwrite dynamically in a way no incumbent can match.
+Root underwrites entirely on observed driving behaviour rather than demographic proxies. Loss ratios stabilised once the adverse-selection problem was solved (good drivers opt in, bad drivers opt out or are priced out). Tesla Insurance in-house captures real-time vehicle telemetry for real-time premium adjustments. The robotics analogy is direct: continuous sensor data from a robot fleet — operating hours, environment classification, near-miss events — supports dynamic underwriting that no incumbent can match.
 
 ---
 
@@ -56,7 +56,7 @@ Root underwrites entirely on observed driving behaviour rather than demographic 
 
 ## D. UK/London-Specific Entry Path
 
-**The Lloyd's Lab route** is the clearest path for a London-based founder without pre-existing Lloyd's relationships. Cohort applications open annually (typically Q1). The 12-week programme pairs startups with managing agents and syndicate underwriters. Exit from the programme often leads directly to a coverholder binding authority or a pilot quota-share arrangement. Koop did it in six months founding-to-coverholder. Armilla did it through the same route. This is the default playbook.
+**The Lloyd's Lab route** is the clearest path for a London-based team without pre-existing Lloyd's relationships. Cohort applications open annually (typically Q1). The 12-week programme pairs startups with managing agents and syndicate underwriters. Exit from the programme often leads directly to a coverholder binding authority or a pilot quota-share arrangement. Koop did it in six months founding-to-coverholder. Armilla did it through the same route. This is the default playbook.
 
 **Named entry points**:
 - **Lloyd's Lab** (direct application): https://www.lloyds.com/insights/lloyds-lab — the most accessible entry for a pre-revenue or early-revenue startup
@@ -64,7 +64,7 @@ Root underwrites entirely on observed driving behaviour rather than demographic 
 - **Placing Platform Limited (PPL)**: The London market's e-placing platform; being listed here as a new coverholder is a downstream step once a managing agent sponsors you
 - **Syndicates open to novel tech lines**: Apollo (already using AI in underwriting; known to consider emerging tech risk), Beazley (active in technology E&O and cyber), Hiscox (active in tech lines, already piloting autonomous systems workflows). None have a named robotics fleet product as of April 2026 — the gap is open.
 
-**Marshmallow** is the most comparable founder profile: UK-based, used alternative data (international driving history + telematics) to underwrite an underserved segment, Gibraltar carrier entity for balance-sheet, UK broker entity for distribution. Revenue £289M in 2024, 62% YoY growth, profitable (£20M net). They did not go through Lloyd's — they built a Gibraltar regulated carrier. For a fleet insurance product where Lloyd's specialty market is more appropriate than the retail admitted market, Lloyd's Lab is the better path. https://www.uktech.news/insurtech/insuretech-marshmallow-turnover-surges-75-to-184m-20241218
+**Marshmallow** is the most comparable UK-based reference: used alternative data (international driving history + telematics) to underwrite an underserved segment, Gibraltar carrier entity for balance-sheet, UK broker entity for distribution. Revenue £289M in 2024, 62% YoY growth, profitable (£20M net). They did not go through Lloyd's — they built a Gibraltar regulated carrier. For a fleet insurance product where Lloyd's specialty market is more appropriate than the retail admitted market, Lloyd's Lab is the better path. https://www.uktech.news/insurtech/insuretech-marshmallow-turnover-surges-75-to-184m-20241218
 
 ---
 
@@ -88,7 +88,7 @@ Root underwrites entirely on observed driving behaviour rather than demographic 
 
 ## F. Implications for the Robotics-Insurance Wedge
 
-The prior art points to one conclusion: this wedge is real, but you are not first. Koop has already built the playbook in the US — Lloyd's Lab, coverholder status, API-connected underwriting, 14 robotics use cases. The question for a UK-anchored founder is whether the market is large enough for a second player with a differentiated angle, and whether the UK/European fleet operator market is sufficiently underserved.
+The prior art points to one conclusion: this wedge is real, but no entrant is first. Koop has already built the playbook in the US — Lloyd's Lab, coverholder status, API-connected underwriting, 14 robotics use cases. The question for a UK-anchored team is whether the market is large enough for a second player with a differentiated angle, and whether the UK/European fleet operator market is sufficiently underserved.
 
 The differentiated angle that prior art has not fully captured is parametric, telemetry-triggered liability for commercial robot fleets — not just GL/E&O on the manufacturer/developer, but operational coverage that reprices in real time based on sensor data from the deployed fleet. Koop covers developers and operators; the gap is in fleet-level parametric products where premiums and coverage limits adjust based on live operating data (hours, incident rate, environment class, geofence compliance). Munich Re and Chubb are moving toward this but have not shipped a product.
 

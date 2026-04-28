@@ -1,7 +1,7 @@
 # Robotics Written Commentary: Substacks, Newsletters, VC Writing
 _Last updated: 2026-04-28_
 
-Eight curated sources across robotics-dedicated newsletters, AI newsletters with heavy robotics coverage, and VC writing. Scoped for a software-only founder looking for signal on wedges, GTM, and unit economics — not hardware specs.
+Eight curated sources across robotics-dedicated newsletters, AI newsletters with heavy robotics coverage, and VC writing. Scoped for software-only founders looking for signal on wedges, GTM, and unit economics — not hardware specs.
 
 ---
 
@@ -34,7 +34,7 @@ _Takeaway: The technical blockers to robotics deployment are largely solved — 
 **Author:** Sergey Levine, UC Berkeley robotics professor, affiliated with Physical Intelligence (pi.)
 **Cadence:** Monthly or less frequent — long-form research commentary
 
-Levine is one of the architects of the current foundation-model-for-robotics paradigm (he co-developed RT-X and ACT). His writing is technically dense but the strategic implications for founders are unusually clear: he frames the data flywheel as the core moat. If you are thinking about where to build defensibility in a software wedge, his framing of deployment-as-data-collection is the most rigorous version of that argument you will find.
+Levine is one of the architects of the current foundation-model-for-robotics paradigm (he co-developed RT-X and ACT). His writing is technically dense but the strategic implications for founders are unusually clear: he frames the data flywheel as the core moat. For anyone thinking about where to build defensibility in a software wedge, his framing of deployment-as-data-collection is the most rigorous version of that argument available.
 
 **Anchor piece:** "The Promise of Generalist Robotic Policies" — https://sergeylevine.substack.com/p/the-promise-of-generalist-robotic
 _Takeaway: 10,000 robots deployed in McDonald's kitchens for two hours per day generates more training data in a year than the rest of the internet; deployment is data strategy, not just revenue._
@@ -101,7 +101,7 @@ _Takeaway: The near-term robotics opportunity is in human-machine teaming, not f
 
 ---
 
-## Synthesis: Five Themes for a Software-First Solo Founder
+## Synthesis: Five Themes for Software-First Founders
 
 **1. Deployment is the new R&D.**
 Across Paxton, Levine, and Keay, the same claim recurs: the technical blockers are largely solved. The data wall, the manipulation capability gap, the hardware cost barrier — all softened materially in 2024–2025. The new bottleneck is operational: can you get robots into a real environment, keep them running, and accumulate proprietary experience data? A software wedge that makes deployment faster, more reliable, or cheaper to maintain addresses the actual constraint — not the capability constraint that dominated 2022–2023 thinking.

@@ -1,6 +1,6 @@
-# Robotics Landscape — Gap Analysis for a Software-First Solo Founder
+# Robotics Landscape — Gap Analysis
 
-**Audience:** Software-first solo founder, UK-based, fintech-adjacent network, no hardware co-founder.
+**Audience:** Software-first founders evaluating robotics opportunities.
 **Source:** 79 company dossiers in `/companies/`, with primary attention to the "Adjacent gap" field of each.
 **Bias:** Software-only opportunities a small team can ship. Hardware moats and capex-heavy plays are explicitly deprioritised.
 
@@ -20,10 +20,10 @@ ABB, AutoStore, FANUC, KUKA, Geek+, Universal Robots, Covariant and Techman all 
 US-headquartered category leaders consistently under-serve the UK, EU, Southeast Asia and Latin America. Specifically named: Locus, Built Robotics, Dusty, Carbon Robotics, Verdant, Coco, Serve, Nuro, Apptronik, Agility, Boston Dynamics, Skydio. The EU under-served wedge has two compounding tailwinds — GDPR and the EU AI Act — that US-first vendors are slow to retrofit. UK is repeatedly named as a credible beachhead (Dusty, BRINC, Distalmotion, CMR's home market). Software-only is well suited because data residency is the actual unlock — not hardware.
 
 ### 4. Privacy / sovereignty / data-residency gap (Chinese hardware vs Western buyers)
-Roborock, Dreame, Ecovacs, Eufy, Pudu, Keenon, Geek+, JAKA, Doosan, RealMan and Unitree all face the same wall in Western enterprise/government: NDAA-style restrictions, Ecovacs' DEF CON exploit, Eufy's BIPA suit, Anker's encryption scandal, Picea's iRobot data firewall as the new structural template. Matic Robots is the only consumer entrant with a privacy-first wedge and is US-only. There is a structural arbitrage for a Western-domiciled software stack that wraps Chinese hardware with sovereign data handling, on-prem inference, and audit trails. Pure software, large TAM, and Altan's UK base is an asset.
+Roborock, Dreame, Ecovacs, Eufy, Pudu, Keenon, Geek+, JAKA, Doosan, RealMan and Unitree all face the same wall in Western enterprise/government: NDAA-style restrictions, Ecovacs' DEF CON exploit, Eufy's BIPA suit, Anker's encryption scandal, Picea's iRobot data firewall as the new structural template. Matic Robots is the only consumer entrant with a privacy-first wedge and is US-only. There is a structural arbitrage for a Western-domiciled software stack that wraps Chinese hardware with sovereign data handling, on-prem inference, and audit trails. Pure software, large TAM; UK/EU domicile is an asset.
 
 ### 5. RaaS / financing / unit-economics gap
-Half the dossiers include an explicit "RaaS would unlock this segment" comment (Symbotic GreenBox, Berkshire Grey, Locus, Pudu, Keenon, Bear, Carbon Robotics, KUKA, UR, Distalmotion, Intuitive ASCs, Boston Dynamics, Built, Canvas — Canvas was killed precisely because they ran RaaS without the financing infrastructure). Nobody serving robotics buyers offers a clean financing primitive — leasing, residual-value underwriting, parametric uptime insurance, or fleet-level ABS. This is fintech wearing a hardware costume. Direct fit for the founder.
+Half the dossiers include an explicit "RaaS would unlock this segment" comment (Symbotic GreenBox, Berkshire Grey, Locus, Pudu, Keenon, Bear, Carbon Robotics, KUKA, UR, Distalmotion, Intuitive ASCs, Boston Dynamics, Built, Canvas — Canvas was killed precisely because they ran RaaS without the financing infrastructure). Nobody serving robotics buyers offers a clean financing primitive — leasing, residual-value underwriting, parametric uptime insurance, or fleet-level ABS. This is fintech wearing a hardware costume. Direct fit for teams with fintech background.
 
 ### 6. Foundation models exist; deployment infrastructure does not
 NVIDIA GR00T, Physical Intelligence π0, Skild Brain, Gemini Robotics, Covariant RFM-1 and Flexion all ship VLA models. None of them ship the operational layer that converts "model weights on HuggingFace" into "robot doing useful work in a customer factory next month." The dossiers for GR00T, Gemini Robotics and Skild explicitly note that mid-market operators have no on-ramp. The wedge is wrapping open-weights models (π0, GR00T-N1) in vertical-specific deployment, fine-tuning, evaluation and observability — purely software, and the underlying brains are free.
@@ -38,126 +38,126 @@ EU AI Act enters force across 2025–2027. Machinery Regulation (EU 2023/1230) r
 
 ## Part 2: Software-only opportunity catalog
 
-Each entry is buildable by a software-first solo founder. Difficulty is rated 1–3 stars (low/medium/high) on the assumption of one technical founder, fintech-adjacent network, and a UK base.
+Each entry is buildable by a small software-first team. Difficulty is rated 1–3 stars (low/medium/high) for one or two technical founders.
 
 ### A. Data collection / labelling for VLA training
 **Description:** Scale AI dominates but is locked into UR; RealMan's GLN platform shows demand but is politically unsellable in the West. The non-UR cobot ecosystem (Doosan, JAKA, Techman, Aubo) and sovereign-residency buyers (surgical, pharma, defence) have no alternative.
 **Wedge:** A managed teleop / data-capture studio for EU industrial cobot OEMs and humanoid startups, on-prem capture, EU-only data flow. Charge per validated trajectory.
 **Difficulty:** Medium — software is easy; teleop crew operations are not.
-**Fintech/UK fit:** Strong — UK is a credible "neutral" data jurisdiction.
+**Geographic angle:** UK/EU teams have an edge — UK is a credible "neutral" data jurisdiction.
 
 ### B. Evaluation and benchmarks for embodied policies
 **Description:** π0, GR00T, Gemini Robotics, Skild, Flexion each claim SOTA with no neutral comparator. LIBERO and RT-X are research artefacts; no commercial eval product exists. Same shape as Chatbot Arena for LLMs.
 **Wedge:** SaaS that runs standardised manipulation/locomotion benchmarks on customer policies in cloud sim and publishes leaderboards. Sells to OEMs (defend claims), insurers (underwriting signal), buyers (procurement comparators).
 **Difficulty:** Medium-high. Sim infrastructure, no hardware.
-**Fintech/UK fit:** Strong as "neutral arbiter" — UK AI assurance positioning. Direct adjacency to underwriting (see H).
+**Geographic angle:** UK AI assurance positioning helps as "neutral arbiter". Direct adjacency to underwriting (see H).
 
 ### C. Observability / dev tools for robot fleets ("Datadog for robots")
 **Description:** Foxglove is the only player and is ROS-biased, leaky on free tier, weak on incident response. No "Sentry-for-robots," no PagerDuty integration, no SLO product. Asian OEM middleware and air-gapped industrial sites are unaddressed.
 **Wedge:** Multi-vendor fleet observability with Sentry-style "what broke and why" UX, native integrations across Pudu, Keenon, Locus, Geek+, UR, Doosan, ABB. Sells to mixed-fleet operators.
 **Difficulty:** Medium. Moat is integration breadth.
-**Fintech/UK fit:** Good — UK logistics/hospitality run mixed fleets and there is no UK-native vendor.
+**Geographic angle:** UK logistics/hospitality run mixed fleets and there is no UK-native vendor.
 
 ### D. Fleet orchestration / multi-vendor middleware
 **Description:** GreyOrange's Certified Ranger Network is enterprise-only. Mid-market operators run an Avidbots scrubber + Bear delivery bot + Locus picker — three apps, no shared scheduler.
 **Wedge:** "Operator OS" — ingests work orders from WMS/PMS/POS, dispatches to whichever robot has capacity, single dashboard. Hardware-agnostic; per-task or per-integration revenue.
 **Difficulty:** Medium-high. Integration drudgery.
-**Fintech/UK fit:** Excellent — UK 3PL/hospitality density makes mixed fleets common.
+**Geographic angle:** UK 3PL/hospitality density makes mixed fleets common.
 
 ### E. Teleoperation-as-a-service (remote pilot networks)
 **Description:** Coco, Serve, Avride, Starship and 1X each build pilot stacks in-house. RealMan's GLN is China-toxic. No vendor-neutral pilot pool with QoS/SLA. No incumbent.
-**Wedge:** Managed remote-pilot service — Twilio for human-in-the-loop — pricing per intervention. Anchor in one vertical (hotel room delivery in UK boutique chains, on Unitree/Pudu hardware).
+**Wedge:** Managed remote-pilot service — Twilio for human-in-the-loop — pricing per intervention. Anchor in one vertical (e.g. hotel room delivery in UK boutique chains, on Unitree/Pudu hardware).
 **Difficulty:** High operationally, medium technically.
-**Fintech/UK fit:** Good — UK timezone overlaps EU and US East Coast.
+**Geographic angle:** UK timezone overlaps EU and US East Coast.
 
 ### F. Simulation / synthetic data
 **Description:** Isaac Sim, MuJoCo, World Labs/Marble all require ML/sim engineers. Both Isaac Sim and World Labs dossiers name the gap: mid-market integrators need pre-configured packages, not raw APIs.
 **Wedge:** Synthetic-data SaaS wrapping Isaac Sim / World Labs APIs behind a "describe your task, get a dataset" UX with vertical templates (bin-pick in fashion fulfilment, table-clear in casual dining). Per-scenario pricing.
 **Difficulty:** Medium. Standing on someone else's compute.
-**Fintech/UK fit:** Neutral.
+**Geographic angle:** Neutral.
 
 ### G. Marketplaces (apps, skills, second-hand robots)
 **Description:** UR+ is the only successful app store. ABB's RobotApps stalled, Doosan's Dr.Dart-Store is nascent. No second-hand marketplace despite a real secondary market (failed Monarch fleet, decommissioned da Vinci, surplus AMRs from 3PL contractions).
 **Wedge:** Two-sided marketplace for used industrial robots/AMRs with valuation, finance, and refurb ops. eBay-meets-MachineryTrader for robotics.
 **Difficulty:** Medium. Hardware-adjacent logistics, harder solo.
-**Fintech/UK fit:** Good — pricing/underwriting is fintech; UK has used-asset infrastructure.
+**Geographic angle:** Pricing/underwriting is fintech; UK has used-asset infrastructure.
 
 ### H. Insurance / risk pricing for robot fleets
 **Description:** No incumbent. Avride logged 37 NHTSA accidents; Built and Monarch faced reliability lawsuits; surgical robots carry malpractice exposure. Nobody has built parametric uptime insurance, RaaS performance bonds, or autonomous-system liability underwriting. Lloyd's and Munich Re are sniffing without data infrastructure.
 **Wedge:** Underwriting platform ingesting robot telemetry (via Foxglove or direct integrations) to price fleet liability, downtime, per-mission cover. MGA first, balance-sheet later.
 **Difficulty:** Medium technically, high regulatory.
-**Fintech/UK fit:** Best fit on the page. London is the global centre.
+**Geographic angle:** London-based teams have a strong edge — Lloyd's is the global centre.
 
 ### I. Vertical SaaS over robot data ("Procore for autonomy")
 **Description:** Spot/Trimble/HoloBuilder give construction GCs scans, but nobody productises the BIM-delta workflow. Same shape across hospitality (Bear/Pudu telemetry → labour planning), agriculture (See & Spray, Carbon, Verdant → agronomy), inspection (Skydio → asset management). Procore/Yardi/Toast/ServiceNow have not built robot-data ingestion.
 **Wedge:** Pick one vertical (construction scan-management or restaurant ops over Bear/Pudu telemetry) and ship the SaaS that turns robot exhaust into operator decisions.
 **Difficulty:** Medium. Software-only.
-**Fintech/UK fit:** Neutral; vertical choice drives outcome.
+**Geographic angle:** Neutral; vertical choice drives outcome.
 
 ### J. Compliance / safety / certification tooling (EU AI Act + Machinery Regulation 2027)
 **Description:** EU AI Act phases in through 2027; the new Machinery Regulation (EU 2023/1230) applies January 2027 and classes autonomous/self-evolving machinery as high-risk. CE-marking workflows for autonomous systems will be a mess. Vanta does SOC 2; nobody does Annex IV technical files for embodied AI.
 **Wedge:** "Vanta for robots" — workflow software for OEMs and integrators to compile technical documentation, run conformity-assessment templates, manage notified-body submissions. Per-seat SaaS.
 **Difficulty:** Medium. Pure software with hireable regulatory expertise.
-**Fintech/UK fit:** Excellent — mature UK compliance-tech ecosystem; serves EU and US cleanly.
+**Geographic angle:** Mature UK compliance-tech ecosystem; UK/EU teams ship to EU and US cleanly.
 
 ### K. Financing / leasing platforms for RaaS
 **Description:** Symbotic's GreenBox, Canvas's collapse, Carbon's $1.4M sticker — every dossier flags capex as the blocker. OEMs use Trinity/Hercules debt; operators use generic equipment leasing. No embedded RaaS-finance-as-a-service. Compare to Pipe / Ratio for SaaS revenue.
 **Wedge:** Financing rails for RaaS contracts — vendor-side (capex → opex, frees balance sheet) and operator-side (pay-per-use leases). Software platform for underwriting + originations + servicing.
 **Difficulty:** Medium technically, high to access capital.
-**Fintech/UK fit:** Best match on the page. London capital access is the unlock.
+**Geographic angle:** London capital access is the unlock for UK-based teams.
 
 ### L. Identity / authentication / access for autonomous systems
 **Description:** No Okta for robots. Who can command which robot? How do robots auth to WMS/PMS/POS? How do you revoke a stolen Spot's credentials? Nascent foundational primitive; cloud platforms each roll their own.
 **Wedge:** Cryptographic identity issuer for robots with policy engine. Boring, deep, defensible.
 **Difficulty:** High. Standards work, slow adoption.
-**Fintech/UK fit:** Neutral. Long timeline.
+**Geographic angle:** Neutral. Long timeline.
 
 ### M. Last-mile robot capacity aggregator (operator-side)
 **Description:** Coco, Serve, Avride, Starship are each locked to one platform (Uber/DoorDash). No neutral exchange routing a delivery to whichever robot has capacity. Same shape as Sendcloud for parcel carriers. Independent restaurants, pharmacy chains and mid-market grocers want robot delivery without Uber Eats' 30%.
 **Wedge:** Aggregator API + merchant SaaS abstracting the fleet. UK sandbox: permissive sidewalk regs in pilot cities, multiple operators arriving.
 **Difficulty:** Medium — integrations and merchant sales.
-**Fintech/UK fit:** Strong — UK delivery market and merchant density.
+**Geographic angle:** UK delivery market and merchant density help here.
 
 ### N. Procurement / spec-comparison SaaS for robotics buyers
 **Description:** No G2 Crowd, no Capterra for robotics. Mid-market warehouse directors comparing Locus vs Geek+ vs Symbotic have nothing. ROI calculators are vendor-supplied. Interact Analysis sells PDFs.
 **Wedge:** SaaS + advisory marketplace to shortlist, RFP, and negotiate robotics contracts. Take rate on closed deals or subscription.
 **Difficulty:** Low-medium. Content + community + workflow.
-**Fintech/UK fit:** Good.
+**Geographic angle:** Good fit for UK/EU teams.
 
 ### O. RaaS billing / metering / revenue-recognition platform
 **Description:** Locus, Bear, Coco, Serve, Carbon, Chef, Avidbots, Built each bill per-pick / per-delivery / per-acre / per-hour with ad-hoc spreadsheets. Stripe and Maxio do SaaS metering; nobody does physical-event metering with cross-fleet reconciliation.
 **Wedge:** Usage-billing infra for robotics OEMs and RaaS operators. Embedded; take a percentage of GMV.
 **Difficulty:** Low-medium. Pure fintech-SaaS.
-**Fintech/UK fit:** Excellent.
+**Geographic angle:** Strong fit for fintech-adjacent teams in any geography.
 
 ---
 
 ## Part 3: Top 5 ranked wedges
 
-Ranking criteria: market pull (today, not 2028), software-only buildability for one technical founder, fit for a UK fintech-network founder, defensibility once built.
+Ranking criteria: market pull (today, not 2028), software-only buildability for one or two technical founders, defensibility once built.
 
 ### Rank 1 — Robot fleet underwriting (parametric insurance + telemetry-driven liability)
-**Pitch:** Lloyd's-anchored MGA that prices and pays out robot-fleet uptime, liability, and per-mission cover using live telemetry from the fleets it covers.
+**Pitch:** MGA that prices and pays out robot-fleet uptime, liability, and per-mission cover using live telemetry from the fleets it covers. Lloyd's-anchored is one credible structuring path.
 **First 10 plausible logos:** GXO Logistics (Agility Digit fleet), DHL (Geek+ AMR fleet), Ocado, John Lewis Partnership Waitrose DCs, Sainsbury's, AB InBev (KUKA palletising), TfL street-trial drone operator, Royal Mail, Tesco fulfilment, NHS trust running surgical robots.
 **Why now (2026):** First serious commercial humanoid deployments at GXO/Toyota/BMW just crossed the threshold where a single high-profile incident is plausible. EU Machinery Regulation 2027 will mandate insurance evidence for autonomous machinery. Lloyd's actively scoping this line and has no incumbent.
-**Distribution:** Direct to fleet operators via brokers (Marsh, Aon, Lockton — UK relationships); embedded into RaaS contracts as a vendor-side bundle (sell through Locus, Agility, Pudu UK distributors).
-**Why this founder wins:** Fintech network is the actual moat. Building underwriting infra is software work the founder can do; selling to Lloyd's syndicates and broker chains is a London-specific game an outsider cannot run from Palo Alto.
+**Distribution:** Direct to fleet operators via brokers (Marsh, Aon, Lockton); embedded into RaaS contracts as a vendor-side bundle (sell through Locus, Agility, Pudu distributors).
+**Why a small software-first team can win:** Building telemetry-driven underwriting infra is software work. The hard part is access to syndicates and broker chains; teams with London/Lloyd's-adjacent networks have a structural advantage that US-coast competitors cannot replicate from Palo Alto. Fintech-adjacent networks help.
 **Risk that kills it:** Reinsurer appetite is fickle; if Lloyd's syndicates do not back the line within 18 months, MGA economics collapse. Mitigant: start by selling pure data/risk-scoring SaaS to existing insurers before standing up the MGA.
 
 ### Rank 2 — "Vanta for robots" (EU AI Act + Machinery Regulation 2027 compliance workflow)
 **Pitch:** Compliance workflow SaaS for OEMs and integrators selling autonomous machinery into the EU — auto-compiles Annex IV technical files, manages conformity-assessment evidence, tracks notified-body submissions across MR + AI Act overlap.
 **First 10 plausible logos:** ABB (Swiss but EU-shipping), KUKA, Universal Robots, Doosan EU subsidiary, JAKA Germany office, Pudu Netherlands, Bear Robotics EU, Avidbots EU, Geek+ EMEA, Boston Dynamics EMEA. Also notified bodies (TÜV SÜD, BSI) as channel partners.
 **Why now:** EU AI Act phase-in 2025–2027; Machinery Regulation applies January 2027; OEMs are starting compliance projects now. Vanta hit $100M ARR in three years on equivalent SOC 2 timing.
-**Distribution:** Notified-body partnerships (BSI is UK-based, perfect channel); robot OEM industry conferences (Automatica, IMTS); cold outbound to compliance leads at every dossier company that ships to EU.
-**Why this founder wins:** Pure software. Solo founder can build in six months with one regulatory consultant on retainer. UK base is neutral on EU/US, BSI on the doorstep.
+**Distribution:** Notified-body partnerships (BSI is UK-based, a credible channel); robot OEM industry conferences (Automatica, IMTS); cold outbound to compliance leads at every dossier company that ships to EU.
+**Why a small software-first team can win:** Pure software. A two-person team can build in six months with one regulatory consultant on retainer. UK/EU domicile is neutral on EU/US and BSI is geographically convenient.
 **Risk that kills it:** Notified bodies build their own workflow tooling and bundle it into assessment fees, foreclosing the third-party SaaS market. Mitigant: partner-channel-first GTM with the bodies.
 
 ### Rank 3 — Multi-vendor fleet observability for mid-market operators ("Datadog for robots, mixed fleets only")
 **Pitch:** Operator-side dashboard that ingests telemetry from Locus + Geek+ + Pudu + Bear + Avidbots + UR + JAKA in one place, with incident response, SLO tracking, and cross-vendor reporting.
 **First 10 plausible logos:** Premier Inn (UK hotels with mixed Bear/Pudu deployments), Wagamama, Pret a Manger DC, Iceland frozen DCs, Wincanton 3PL, Howdens DCs, Bidfood, NHS Property Services (cleaning), University of Cambridge estates, Heathrow ops.
-**Why now:** RaaS model has put the second and third robot vendors into many UK mid-market operators. They have spreadsheets across vendors and no single view. Mixed-fleet density is brand-new in 2025–2026.
-**Distribution:** Direct outbound to ops directors at UK 3PLs and hospitality groups; PLG via free tier for single-vendor users that converts on second-vendor add. Foxglove ignores this segment by design.
-**Why this founder wins:** Pure software, integration grunt work that solo founders are good at, and the buyer (UK ops director) is a comfortable conversation for a UK founder.
+**Why now:** RaaS model has put the second and third robot vendors into many mid-market operators. They have spreadsheets across vendors and no single view. Mixed-fleet density is brand-new in 2025–2026.
+**Distribution:** Direct outbound to ops directors at 3PLs and hospitality groups; PLG via free tier for single-vendor users that converts on second-vendor add. Foxglove ignores this segment by design.
+**Why a small software-first team can win:** Pure software, integration grunt work that small teams are good at, and the buyer (mid-market ops director) is a faster procurement cycle than enterprise.
 **Risk that kills it:** Foxglove pivots downmarket and bundles for free. Mitigant: vertical workflow features (compliance reporting, finance reconciliation) that Foxglove will not build.
 
 ### Rank 4 — RaaS billing & revenue-recognition infra ("Stripe Billing for physical events")
@@ -165,7 +165,7 @@ Ranking criteria: market pull (today, not 2028), software-only buildability for 
 **First 10 plausible logos:** Locus Robotics, Bear Robotics, Coco, Serve, Avidbots, Carbon Robotics, Chef Robotics, Built Robotics, Dusty, Pudu (international entity).
 **Why now:** RaaS share of robotics revenue crossed a threshold in 2024–2025; multiple OEM dossiers (Pudu's industrial AMR launch, Doosan's losses, Symbotic's revenue-recognition material weakness) flag billing/accounting as an internal pain. ASC 606 / IFRS 15 audit pressure is rising.
 **Distribution:** Direct to OEM finance/ops leads; embedded partnership with robotics OEMs (revenue share); content marketing into accounting/finance community.
-**Why this founder wins:** This is fintech-SaaS in robotics clothing. Founder's domain. Solo-buildable on top of Stripe primitives.
+**Why a small software-first team can win:** This is fintech-SaaS in robotics clothing — favours teams with billing/metering DNA. Buildable on top of Stripe primitives.
 **Risk that kills it:** Stripe themselves ship usage-based metering deep enough that physical-event ingestion becomes a thin connector (which Stripe could buy). Mitigant: own the reconciliation/audit layer above the meter, which Stripe avoids.
 
 ### Rank 5 — Robotics policy evaluation SaaS (independent benchmarks for VLA models)
@@ -173,27 +173,27 @@ Ranking criteria: market pull (today, not 2028), software-only buildability for 
 **First 10 plausible logos:** Physical Intelligence, Skild AI, Flexion, NVIDIA (DGX Cloud team for marketing), HuggingFace/Pollen, Apptronik, 1X, Agility, Boston Dynamics (Atlas R&D), Figure AI.
 **Why now:** Five well-funded VLA labs all claiming SOTA with no independent comparator. Customers (BMW, Mercedes, GXO) cannot procure rationally. Same dynamic as 2023 LLM evals. First mover sets the standard.
 **Distribution:** Open leaderboard as content / inbound; enterprise tier sells to OEM customers (procurement evidence) and insurers (underwriting input — links back to Wedge 1).
-**Why this founder wins:** Software-only, sim-on-cloud-GPUs. Solo can ship V1 in months. UK-as-neutral-arbiter narrative. Long-term option to become the de-facto standards body.
+**Why a small software-first team can win:** Software-only, sim-on-cloud-GPUs. A small team can ship V1 in months. UK/EU "neutral arbiter" narrative is available. Long-term option to become the de-facto standards body.
 **Risk that kills it:** A well-funded entity (Scale AI, NVIDIA, MLPerf consortium) launches a competing benchmark and wins on credibility. Mitigant: ship first, optimise for transparency over capability, partner with academic labs (Imperial, ETH, Berkeley).
 
 ---
 
 ## Part 4: What to skip
 
-A software-first solo founder should walk past the following, regardless of how attractive they look:
+A software-first team should walk past the following, regardless of how attractive they look:
 
-- **Anything requiring a ground-up humanoid or quadruped.** Tesla Optimus, Figure, 1X, Apptronik, Agility, Unitree, Boston Dynamics. Capex, supply chain, regulatory. Wrong founder profile.
+- **Anything requiring a ground-up humanoid or quadruped.** Tesla Optimus, Figure, 1X, Apptronik, Agility, Unitree, Boston Dynamics. Capex, supply chain, regulatory. Wrong shape for a software-first team.
 - **Surgical robotics hardware.** Intuitive's installed base + FDA + surgeon training is uncrackable solo. Vicarious Surgical raised $220M and went bankrupt without ever selling a unit. Distalmotion took 13 years and $400M to reach 3,000 procedures. No.
 - **General-purpose VLA model training.** π0, GR00T, Gemini Robotics, Skild are spending billions to be ahead of you. Build on top of their open weights instead.
-- **Defence prime contracting.** Anduril, Helsing, Saronic, Shield AI, Skydio dominate; sales cycles are 24+ months and require US/EU clearances a UK solo founder cannot fast-track. Defence-adjacent compliance tooling is fine; defence platform competition is not.
+- **Defence prime contracting.** Anduril, Helsing, Saronic, Shield AI, Skydio dominate; sales cycles are 24+ months and require US/EU clearances a small software team cannot fast-track. Defence-adjacent compliance tooling is fine; defence platform competition is not.
 - **Consumer robot vacuum / lawnmower hardware.** Roborock, Dreame, Ecovacs, Eufy, Matic, iRobot/Picea are in a knife fight on $250 ASPs with Chinese manufacturing scale. Margin is gone. Fleet-management SaaS for STR operators using these robots is a fine adjacency; competing on hardware is a graveyard.
 - **Last-mile sidewalk robot operator.** Coco, Serve, Avride, Starship, Nuro all eat capex against platform-mediated revenue with single-customer concentration. Capital-intensive. Wedges D, M and N capture the value without the fleet.
 - **Agricultural autonomous tractors / weeding implements.** Deere, Monarch, Carbon, Verdant, Aigen — capital-heavy, seasonal cash flow, vertical knowledge gap. The data layer over them is fine; the iron is not.
-- **Drone hardware (BRINC, Skydio class).** NDAA-era procurement is a US-government game. UK opportunity is real but is a hardware/manufacturing play, not solo-software.
+- **Drone hardware (BRINC, Skydio class).** NDAA-era procurement is a US-government game. UK opportunity is real but is a hardware/manufacturing play, not software-first.
 - **Single-vendor ROS-only dev tools.** Foxglove already won the ROS-native developer; Rerun is closing in. Pick the multi-vendor / non-ROS / mid-market gap (Wedge 3) instead.
-- **Anything requiring co-located ops in 10+ countries on day one.** RaaS leasing fleets globally, robot insurance with global underwriting capacity from day one, etc. Stage these — start UK, then EU, then US.
+- **Anything requiring co-located ops in 10+ countries on day one.** RaaS leasing fleets globally, robot insurance with global underwriting capacity from day one, etc. Stage these — start in one geography, then expand.
 
-The pattern across the skip list: hardware capex, multi-year regulatory cycles, US-government procurement, and single-customer concentration. The pattern across the keep list (Part 3): software, fintech-shaped problems, UK/EU geographic opportunity, integration/aggregation across fragmented vendors. That is the founder's lane. Stay in it.
+The pattern across the skip list: hardware capex, multi-year regulatory cycles, US-government procurement, and single-customer concentration. The pattern across the keep list (Part 3): software, fintech-shaped problems, UK/EU geographic opportunity, integration/aggregation across fragmented vendors. That is the lane for a software-first team. Stay in it.
 
 ---
 
@@ -237,7 +237,7 @@ This is a single insight that materially improves the GTM odds on four of the fi
 
 ### C. New nuance: human-machine teaming, not full autonomy
 
-Josh Wolfe (Lux Q1 2025): "Agency is a shared protocol." The near-term commercial market is partial automation with humans in the loop, not full autonomy. The original analysis took this implicitly (teleop-as-a-service was Wedge E) but didn't elevate it. After the ecosystem read, this nuance argues for prioritising tools that make human-robot collaboration cheaper — supervisory dashboards, intervention queueing, hand-off UX — over tools that assume autonomy. This affects how Wedge 3 (observability) and Wedge E (teleop) should be designed.
+Josh Wolfe (Lux Q1 2025): "Agency is a shared protocol." The near-term commercial market is partial automation with humans in the loop, not full autonomy. The original analysis took this implicitly (teleop-as-a-service was Wedge E) but didn't elevate it. After the ecosystem read, this nuance argues for prioritising tools that make human-robot collaboration cheaper — supervisory dashboards, intervention queueing, hand-off UX — over tools that assume full autonomy. This affects how Wedge 3 (observability) and Wedge E (teleop) should be designed.
 
 ### D. Updated top-5 ranking confidence
 
@@ -253,7 +253,7 @@ No re-ordering, but confidence levels shift:
 
 ### E. One wedge to potentially elevate
 
-The data infrastructure / curation wedge (originally Wedge A in the software-only catalog, then promoted in the data-collection deep-dive) is now the most-validated wedge in the document. Five independent sources name it as the durable moat. NomadicML's $8.4M raise (March 2026) is the market signal. If forced to pick one wedge to start tomorrow, the case for Wedge A has become stronger than the case for Wedge 1 (insurance) — but only if the founder is willing to operate the labour-intensive collection side. The pure-software curation/sovereignty layer above the data is the safer ship.
+The data infrastructure / curation wedge (originally Wedge A in the software-only catalog, then promoted in the data-collection deep-dive) is now the most-validated wedge in the document. Five independent sources name it as the durable moat. NomadicML's $8.4M raise (March 2026) is the market signal. If forced to pick one wedge to start tomorrow, the case for Wedge A has become stronger than the case for Wedge 1 (insurance) — but only for teams willing to operate the labour-intensive collection side. The pure-software curation/sovereignty layer above the data is the safer ship.
 
 ### F. What the ecosystem chatter does NOT support
 
@@ -306,18 +306,18 @@ Canvas had real technology, real customers, a real market wedge — and died bec
 
 - **Demand:** $8.2B RaaS market in 2026, growing fast. Every operator in the gap-analysis dossiers (Locus, Bear, Coco, Serve, Avidbots, Carbon, Chef, Built) bills usage in spreadsheets.
 - **Competition:** Zero funded entrants. The labour market shows companies improvising the function with single overloaded roles.
-- **Buildability:** Pure software, on top of Stripe primitives. Solo-founder buildable. Founder's domain (fintech-adjacent).
+- **Buildability:** Pure software, on top of Stripe primitives. Buildable by a small team. Favours teams with fintech-adjacent DNA.
 - **Distribution:** Embedded in OEM finance/ops workflows. Sell through systems integrators (per the Part 5 SI-as-channel insight). Revenue share with OEM partners.
 - **Defensibility:** The reconciliation/audit/revenue-recognition layer above pure metering is sticky and Stripe avoids it. Compliance-grade ASC 606 / IFRS 15 support is the moat.
 - **Failure mode (now known):** Don't drift into being the lender. Stay in software margin.
-- **Why this founder:** Fintech network. UK-based — same time zone as the EU OEMs and US East Coast operators. Stripe-pattern SaaS is a known shape.
+- **Geographic angle:** UK/EU teams have time-zone overlap with EU OEMs and US East Coast operators. Stripe-pattern SaaS is a known shape regardless of geography.
 
 ### D. What to do next
 
-1. **Customer calls (Category 1 in the research recommendation).** Now sharply targeted: 5 conversations with OEM finance/ops leads (Locus, Bear, Pudu UK, Avidbots, Built) plus 2 with SIs (KPI Solutions, Bowmer & Kirkland). Question: how do you currently bill RaaS contracts and what would you pay to stop doing it that way?
+1. **Customer calls.** Sharply targeted: 5 conversations with OEM finance/ops leads (Locus, Bear, Pudu UK, Avidbots, Built) plus 2 with SIs (KPI Solutions, Bowmer & Kirkland). Question: how do you currently bill RaaS contracts and what would you pay to stop doing it that way?
 2. **Build a 90-day MVP** that ingests one source of physical events (start with Foxglove or a single OEM webhook), reconciles against contract terms, and outputs an invoice. Single-vertical first (warehouse picking).
-3. **In parallel, the BSI Group conversation for Wedge 2** is worth opening — different time horizon (regulatory deadline is 2027) but the relationship takes months to mature. Cheap option to keep on the table.
-4. **Defer Wedge 1** until the customer calls confirm or kill RaaS billing. If RaaS billing dies in customer validation, insurance is still there as the fallback.
+3. **In parallel, opening a BSI Group conversation for Wedge 2** is worth the cost — different time horizon (regulatory deadline is 2027) but the relationship takes months to mature. Cheap option to keep on the table.
+4. **Defer Wedge 1** until customer calls confirm or kill RaaS billing. If RaaS billing dies in customer validation, insurance is still there as the fallback.
 
 ---
 
@@ -341,7 +341,7 @@ The external analysis lands on a near-identical wedge set, ranked slightly diffe
 
 Five out of seven wedges match. The "what to skip" list is identical (humanoids, surgical, sidewalk delivery, drone hardware, raw teleop). The "EU AI Act + Machinery Regulation 2027 deadline" framing for Wedge 2 is independently the same argument.
 
-This is meaningful triangulation. Two independent analyses given the same source material converge on the same 5–7 software wedges. The space of credible solo-founder software opportunities in robotics is small and the analyses agree on what's in it.
+This is meaningful triangulation. Two independent analyses given the same source material converge on the same 5–7 software wedges. The space of credible software-only opportunities in robotics is small and the analyses agree on what's in it.
 
 ### B. Net-new additions worth absorbing
 
@@ -367,9 +367,9 @@ The honest read: observability is still a real opportunity for the **mid-market 
 **2. Bundled platform vs single wedge.**
 External recommends a sequenced bundle: observability first → billing → compliance → insurance, all on one telemetry data asset. This document recommends picking one wedge (Part 6 picks RaaS billing) and going deep before broadening.
 
-The bundle thesis has real appeal: telemetry feeds all four products, customer relationship deepens with each module, exit story is bigger. But the risks for a solo founder are also real:
+The bundle thesis has real appeal: telemetry feeds all four products, customer relationship deepens with each module, exit story is bigger. But the risks for a small team are also real:
 - Surface area is 4× a single wedge — slower to ship, harder to validate
-- The "telemetry asset" assumes you actually win observability against four funded competitors
+- The "telemetry asset" assumes the team actually wins observability against four funded competitors
 - Each module has different buyers (Ops Director vs Compliance Officer vs Finance vs Risk) — selling to one is hard, selling to four in parallel is harder
 - Vanta, Stripe, and Coalition each became billion-dollar companies on a single wedge before broadening
 
@@ -379,9 +379,9 @@ The bundle is the right answer at Series A. It's the wrong answer at week 1. **P
 
 Triangulation across three independent passes (this document, the ecosystem chatter in Part 5, the external opinion in Part 7) produces a converged top-3 with high confidence:
 
-1. **RaaS billing** — strongest dual signal (zero competitors per VC scan, IFR +42% transport/logistics RaaS growth, Serve Robotics improvising the function). Pick if you trust the data on competitive whitespace.
-2. **Vanta for robots** — strongest deadline signal (Aug 2027), strongest channel signal (BSI white-label). Pick if you trust the regulatory deadline to drive demand.
-3. **Multi-vendor observability (mid-market mixed-fleet only)** — strongest pain signal (every operator complains), but crowded. Pick if you trust your ability to win against Foxglove on operator UX.
+1. **RaaS billing** — strongest dual signal (zero competitors per VC scan, IFR +42% transport/logistics RaaS growth, Serve Robotics improvising the function). Pick if the data on competitive whitespace holds.
+2. **Vanta for robots** — strongest deadline signal (Aug 2027), strongest channel signal (BSI white-label). Pick if the regulatory deadline reliably drives demand.
+3. **Multi-vendor observability (mid-market mixed-fleet only)** — strongest pain signal (every operator complains), but crowded. Pick if a team can credibly win against Foxglove on operator UX.
 
 Insurance and eval are credible follow-ons or fallbacks — not the right week-1 pick after this validation pass.
 

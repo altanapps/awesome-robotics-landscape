@@ -189,7 +189,7 @@ The genuinely underserved layer is **the business and compliance infrastructure 
 
 The humanoid pilot category is a novel deployment signal: Figure is paying $35–$40/hr for humans to wear teleoperation suits and teach robots, with explicit "contract-to-hire" language. This suggests the industry knows these roles are transitional — they're building training data, not permanent headcount. The tooling to manage, QA, and commercialise that training data pipeline does not yet have a named role or named product.
 
-UK lags the US by 2–3 years in robotics ops role maturity but is growing. The most relevant UK signal is Ocado's continued fleet software hiring and Anduril's London engineering investment. A UK-first robotics ops tool would find its first customers in warehouse and defence, not restaurant or last-mile.
+UK lags the US by 2–3 years in robotics ops role maturity but is growing. The most relevant UK signal is Ocado's continued fleet software hiring and Anduril's London engineering investment. A UK-first robotics ops tool would find its first customers in warehouse and defence, not restaurant or last-mile. A US-first tool has 2–3× the role-density to sell into.
 
 ---
 
