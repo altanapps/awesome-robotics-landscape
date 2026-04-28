@@ -1,0 +1,22 @@
+#!/bin/sh
+# Block commits that contain a real Anthropic API key.
+# Matches sk-ant- followed by 40+ alphanumeric chars (placeholders like sk-ant-... pass through).
+
+if git diff --cached -p | grep -E "sk-ant-[a-zA-Z0-9_-]{40,}" > /dev/null; then
+  echo ""
+  echo "  BLOCKED: real Anthropic API key detected in staged changes."
+  echo "  Remove the key (or .gitignore the file) before committing."
+  echo ""
+  exit 1
+fi
+
+# Also block obvious OpenAI keys
+if git diff --cached -p | grep -E "sk-(proj-)?[a-zA-Z0-9_-]{40,}" | grep -v "sk-ant-" > /dev/null; then
+  echo ""
+  echo "  BLOCKED: possible OpenAI API key detected in staged changes."
+  echo "  Remove the key before committing."
+  echo ""
+  exit 1
+fi
+
+exit 0

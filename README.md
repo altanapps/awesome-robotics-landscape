@@ -5,6 +5,9 @@ Research bundle compiled April 2026. 82 company dossiers across 12 verticals, ga
 ## Quick start
 
 ```bash
+# Install the secret-scanning pre-commit hook (one-time)
+cp hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+
 # Rebuild the interactive index page locally
 ANTHROPIC_API_KEY=sk-ant-... python3 build.py
 
@@ -16,6 +19,8 @@ python3 -m http.server 8765
 ```
 
 `index.html` is gitignored because the build embeds your `ANTHROPIC_API_KEY` for the in-page chat panel. Rebuild after cloning.
+
+The pre-commit hook blocks any commit containing a real Anthropic or OpenAI API key.
 
 ## What's here
 
